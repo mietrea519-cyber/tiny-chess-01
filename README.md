@@ -16,6 +16,8 @@ A chess engine in **3,442 bytes** of Python — `main.py` is the whole engine, i
 
 It plays its games through the make.fun env: `POST /game` for the position, `POST /move` for its answer, until the env reports the trial done.
 
+Local verification before submitting: the move generator was checked against known perft counts (start position, Kiwipete, and an en-passant pin position all exact), and the packed file was decoded and re-tested end to end — it finds the scholar's-mate finish Qxf7# from the classic trap position.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=1e3qpbvy&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
